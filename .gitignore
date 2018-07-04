@@ -1,4 +1,4 @@
 .idea
 *.iml
 *-checkpoint.ipynb
-models
+models/
