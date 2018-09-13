@@ -1,0 +1,1 @@
+/home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/../../python_examples/dlib.so

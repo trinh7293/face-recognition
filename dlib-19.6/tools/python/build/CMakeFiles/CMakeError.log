@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_22d61/fast"
+/usr/bin/make -f CMakeFiles/cmTC_22d61.dir/build.make CMakeFiles/cmTC_22d61.dir/build
+make[1]: Entering directory '/home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22d61.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_22d61.dir/CheckSymbolExists.c.o   -c /home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_22d61
+/home/aneo/.local/lib/python3.5/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22d61.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_22d61.dir/CheckSymbolExists.c.o  -o cmTC_22d61 
+CMakeFiles/cmTC_22d61.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_22d61.dir/build.make:86: recipe for target 'cmTC_22d61' failed
+make[1]: *** [cmTC_22d61] Error 1
+make[1]: Leaving directory '/home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_22d61/fast' failed
+make: *** [cmTC_22d61/fast] Error 2
+
+File /home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c056/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c056.dir/build.make CMakeFiles/cmTC_3c056.dir/build
+make[1]: Entering directory '/home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c056.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_3c056.dir/CheckFunctionExists.c.o   -c /home/aneo/.local/lib/python3.5/site-packages/cmake/data/share/cmake-3.11/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3c056
+/home/aneo/.local/lib/python3.5/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c056.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3c056.dir/CheckFunctionExists.c.o  -o cmTC_3c056 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3c056.dir/build.make:86: recipe for target 'cmTC_3c056' failed
+make[1]: *** [cmTC_3c056] Error 1
+make[1]: Leaving directory '/home/aneo/Learn/python_deeplearning/face-recognition-karassem/dlib-19.6/tools/python/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3c056/fast' failed
+make: *** [cmTC_3c056/fast] Error 2
+
+
